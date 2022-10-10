@@ -5,6 +5,13 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: white;
+    padding-left: 20px;
+    margin: 0;
+    text-align: center;
+}
+
 .glow {
     animation: glow 1s ease-in-out infinite alternate;
 }
@@ -25,7 +32,7 @@ h1 {
     border: none;
     background-color: blue;
     color: white;
-    padding: 10vw 28px;
+    padding: 9vw;
     font-size: 20px;
     cursor: pointer;
 }
@@ -39,5 +46,11 @@ h1 {
     position: absolute;
     bottom: 20px;
     width: 100%;
+    text-align: center;
+}
+
+.textbox {
+    color: white;
+    padding-left: 20px;
     text-align: center;
 }
