@@ -47,6 +47,7 @@ h2 {
     position: relative;
     width: 100%;
     text-align: center;
+    bottom: 0;
 }
 
 .textbox {
