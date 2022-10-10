@@ -1,0 +1,20 @@
+h1 {
+    color: white;
+    font-family: mokotoFont;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.glow {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white;
+    }
+
+    to {
+        text-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px white;
+    }
+ }
