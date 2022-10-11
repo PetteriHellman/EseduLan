@@ -1,0 +1,13 @@
+.lomake {
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    font-family: mokotoFont;
+    padding: 10px;
+    line-height: 2;
+}
+
+input {
+    width: 50%;
+    height: 40px;
+}
