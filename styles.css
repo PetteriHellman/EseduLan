@@ -19,13 +19,13 @@
     right: 0;
     top: 0;
     width: 40%;
-padding-right: 2cm;
-    }
+    padding-right: 2cm;
+}
 
 h2 {text-align: center;
     margin-top: 30px;
-color: white;
-font-family: mokotoFont;
+    color: white;
+    font-family: mokotoFont;
 } 
 
 p {text-align: center;
@@ -34,19 +34,31 @@ p {text-align: center;
 
 li {font-size: 18px;}
 
-.navigointi a {list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333}
-
-.navigointi b {float: left;}
-
-.navigointi c {display: block;
-    color: white;
+.navigointi {
+    position: relative;
+    top: 0;
+    width: 100%;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;}
+}
+
+.navb {
+    display: inline-block;
+    width: 49%;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 2vw;
+    cursor: pointer;
+    padding: 1vw;
+    position: relative;
+    border-radius: 50px;
+    font-family: mokotoFont;
+}
+
+.navb:hover {
+    background-color: lightsteelblue;
+    color: blue;
+}
 
 .tekstikoko { font-size: 16px;}
 

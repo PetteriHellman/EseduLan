@@ -5,6 +5,7 @@
     padding: 10px;
     line-height: 2;
     text-align: center;
+    margin-top: 60px;
 }
 
 input[type="text"] {
@@ -25,4 +26,37 @@ input[type="radio"] {
 body {
     padding: 0;
     margin: 0;
+}
+
+.nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navb {
+    display: inline-block;
+    width: 49%;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 2vw;
+    cursor: pointer;
+    padding: 1vw;
+    position: relative;
+    border-radius: 50px;
+    font-family: mokotoFont;
+}
+
+.navb:hover {
+    background-color: lightsteelblue;
+    color: blue;
+}
+
+h2 {
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+    font-family: mokotoFont;
 }
