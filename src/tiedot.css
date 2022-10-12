@@ -41,9 +41,9 @@ body {
     border: none;
     background-color: blue;
     color: white;
-    font-size: 2vw;
+    font-size: 3vw;
     cursor: pointer;
-    padding: 1vw;
+    padding: 2vw;
     position: relative;
     border-radius: 50px;
     font-family: mokotoFont;
