@@ -34,7 +34,7 @@ p {text-align: center;
 
 li {font-size: 18px;}
 
-.navigointi a {
+.navigointi {
     position: relative;
     top: 0;
     width: 100%;
@@ -42,31 +42,23 @@ li {font-size: 18px;}
 }
 
 .navb {
-    background-color: blue;
     display: inline-block;
     width: 49%;
     border: none;
+    background-color: blue;
     color: white;
-    font-family: mokotoFont; 
     font-size: 2vw;
     cursor: pointer;
     padding: 1vw;
     position: relative;
     border-radius: 50px;
+    font-family: mokotoFont;
 }
 
 .navb:hover {
     background-color: lightsteelblue;
     color: blue;
 }
-
-.navigointi b {float: left;}
-
-.navigointi c {display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;}
 
 .tekstikoko { font-size: 16px;}
 
