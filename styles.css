@@ -49,9 +49,9 @@ li {font-size: 18px;}
     border: none;
     color: white;
     font-family: mokotoFont; 
-    font-size: 1vw;
+    font-size: 2vw;
     cursor: pointer;
-    padding: 2vw;  
+    padding: 1vw;  
     border-radius: 50px;
 }
 
