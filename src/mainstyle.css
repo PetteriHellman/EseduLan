@@ -1,121 +1,146 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    color: white;
-    font-family: mokotoFont;
-    font-size: 8vw;
-    text-align: center;
+  color: white;
+  font-family: mokotoFont;
+  font-size: 8vw;
+  text-align: center;
 }
 
 h2 {
-    color: white;
-    margin: 0;
-    text-align: center;
-    font-size: 30px;
-    /* position , z-index mahdollisesti turhia */
-    z-index: 1;
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  /* position , z-index mahdollisesti turhia */
+  z-index: 1;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .glow {
-    animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    from {
-        text-shadow: 0 0 5px white;
-    }
+  from {
+    text-shadow: 0 0 5px white;
+  }
 
-    to {
-        text-shadow: 0 0 10px white;
-    }
- }
+  to {
+    text-shadow: 0 0 10px white;
+  }
+}
 
 .block {
-    display: inline-block;
-    width: 49%;
-    border: none;
-    background-color: blue;
-    color: white;
-    font-size: 3vw;
-    cursor: pointer;
-    padding: 4vw;
-    position: relative;
-    border-radius: 50px;
-    font-family: mokotoFont;
+  display: inline-block;
+  width: 49%;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 3vw;
+  cursor: pointer;
+  padding: 4vw;
+  position: relative;
+  border-radius: 50px;
+  font-family: mokotoFont;
 }
 
 .block:hover {
-    background-color: lightsteelblue;
-    color: blue;
+  background-color: lightsteelblue;
+  color: blue;
 }
-
-.container {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
 
 /*Sosiaalinen media napit*/
 
 
 ul {
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  ul li {
-    list-style: none;
-  }
-  
-  ul li a {
-    text-align: center;
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: 0 10px;
-    border-radius: 50%;
-    padding: 6px;
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    background: linear-gradient(0deg, #ddd, #fff);
-    transition: .5s;
-  }
-  
-  ul li a:hover {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    text-decoration: none;
-  }
-  
-  ul li a .fa {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+ul li a .fa {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size: 24px;
+  color: #262626;
+  transition: .5s;
+}
+
+ul li:nth-child(1) a:hover .fa {
+  color: #3b5998;
+}
+
+ul li:nth-child(2) a:hover .fa {
+  color: #00aced;
+}
+
+ul li:nth-child(3) a:hover .fa {
+  color: #e4405f;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    margin: auto;
+    float: none;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    display: block;
-    background: linear-gradient(0deg, #fff, #ddd);
-    border-radius: 50%;
-    line-height: calc(60px - 12px);
-    font-size: 24px;
-    color: #262626;
-    transition: .5s;
-  }
+    text-align: center}
+
+    .mobiili {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: blue;
+      color: white;
+      font-size: 3vw;
+      cursor: pointer;
+      padding: 4vw;
+      margin-bottom: 10px;
+      position: relative;
+      border-radius: 50px;
+      font-family: mokotoFont;
+    }
   
-  ul li:nth-child(1) a:hover .fa {
-    color: #3b5998;
-  }
-  
-  ul li:nth-child(2) a:hover .fa {
-    color: #00aced;
-  }
-  
-  ul li:nth-child(3) a:hover .fa {
-    color: #e4405f;
   }
