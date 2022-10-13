@@ -1,38 +1,23 @@
-.kappale1 {
-    color: white;
-    float: left;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    left: 0; 
-    top: 0;
-    width: 40%;
-    padding-left: 2cm;
-  }
-
-.kappale2 {
-    color: white;
-    float: right;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    right: 0;
-    top: 0;
-    width: 40%;
-    padding-right: 2cm;
-}
-
 h2 {text-align: center;
     margin-top: 30px;
     color: white;
     font-family: mokotoFont;
 } 
 
-p {text-align: center;
+p {
+    color: white;
+    text-align: left;
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
-li {font-size: 18px;}
+li {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
 
 .navigointi {
     position: relative;
@@ -63,3 +48,53 @@ li {font-size: 18px;}
 .tekstikoko { font-size: 16px;}
 
 
+
+/*Tab koodia*/
+
+* {box-sizing: border-box}
+
+/* Tabin tyyli */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #06085c;
+  width: 30%;
+  height: 300px;
+}
+
+/* Tabin napit/buttonit */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+
+.tab button.active {
+  background-color: white;
+  color: #06085c;
+}
+
+/* Tabin sisältö-boxi */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
