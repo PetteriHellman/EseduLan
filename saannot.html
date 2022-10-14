@@ -7,7 +7,8 @@
     <title>Säännöt</title>
     <link rel="stylesheet" href="src/base.css">
     <link rel="stylesheet" href="src/styles.css">
-    </head>
+    <script src="src/tabs.js"></script> 
+</head>
 
 <body>
 <div class="navigointi"> 
@@ -15,12 +16,26 @@
     <a href="form.html"><button class="navb">Ilmoittaudu</button></a>
 </div>
 
-<div class="kappale1">
-    <h1 style="text-align: center; font-family: mokotoFont; margin: bottom 20px;">Ohjeet</h1> 
+<div class="tab">
+    <button id="default" class="tablinks" onclick="openTab(event, 'yleista')">Yleistä</button>
+    <button class="tablinks" onclick="openTab(event, 'pakkauslista')">Pakkauslista</button>
+    <button class="tablinks" onclick="openTab(event, 'laitteisto')">Laitteisto</button>
+    <button class="tablinks" onclick="openTab(event, 'ohjelmisto')">Ohjelmisto</button>
+    <button class="tablinks" onclick="openTab(event, 'virustorjunta')">Virustorjunta</button>
+    <button class="tablinks" onclick="openTab(event, 'palomuuri')">Palomuuri</button>
+    <button class="tablinks" onclick="openTab(event, 'paattyminen')">Päättyminen</button>
+    <button class="tablinks" onclick="openTab(event, 'ktavarat')">Kielletyt tavarat</button>
+    <button class="tablinks" onclick="openTab(event, 'paihteet')">Päihteet</button>
+    <button class="tablinks" onclick="openTab(event, 'tekijanoikeudet')">Tekijänoikeudet</button>
+    <button class="tablinks" onclick="openTab(event, 'musiikki')">Musiikki</button>
+    <button class="tablinks" onclick="openTab(event, 'vauriot')">Vauriot</button>
+    <button class="tablinks" onclick="openTab(event, 'lahiverkko')">Lähiverkko</button>
+    <button class="tablinks" onclick="openTab(event, 'pgrafia')">Sopimaton materiaali</button>
+</div>
 
-    <p>Jokaisella on erilaiset tarpeet, mutta ohessa on peruslista tapahtumassa yöpyvien tarvitsemista asioista. </p>
-    
-    <div class="Pakkauslista">
+
+
+<div id="pakkauslista" class="tabcontent">
     <h2>Pakkauslista</h2>
     
     <ul>
@@ -33,7 +48,7 @@
         <li>Muutakin voi tuoda, jos kokee tarvitsevansa. Muista kuitenkin, että esim. erittäin tehokkaat äänentoistolaitteet ja kaikenlaiset teräaseet ovat kiellettyjä. Kiellettyjen tavaroiden lista löytyy kokonaisuudessaan säännöistä. Tavaroidesi pitää mahtua konepaikallesi.</li>
     </ul>
 </div>
-<div class="laitteisto">
+<div id="laitteisto" class="tabcontent">
 
     <h2>Laitteisto ja muut tarpeelliset</h2>
     <p>Sinun on itse tuotava paikalle kaikki, mitä tarvitset laitteesi käyttämiseen</p>
@@ -47,7 +62,7 @@
     </ul>
 </div>
 
-<div class="ohjelmisto">
+<div id="ohjelmisto" class="tabcontent">
     <h2>Ohjelmistot ja tietoturva</h2>
     <p>Varmistu, että tietokoneesi on suojassa viruksilta ja hakkerointiyrityksiltä. Tietoturva on yhteistyötä vaativaa ja koskee jokaista tapahtumaverkon käyttäjää. Tee seuraavat toimenpiteet ennen kuin lähdet tapahtumaan.</p>
     <ul>
@@ -64,17 +79,17 @@
     </ul>
 </div>
 
-<div class="virustorjunta">
+<div id="virustorjunta" class="tabcontent">
     <h2>Virustorjunta</h2>
     <p>Varmista että sinulla on asennettuna viimeisimmillä virustietokannoilla varustettu virustorjuntaohjelma. Yleensä virustorjuntaohjelmat päivittävät itsensä ja tietokantansa automaattisesti. Asia kannattaa kuitenkin tarkistaa ja kytkeä ominaisuus päälle, mikäli tällainen valinta on.</p>
 </div>
 
-<div class="palomuuri">
+<div id="palomuuri" class="tabcontent">
     <h2>Palomuuri</h2>
     <p>Suosittelemme, että pidät tietokoneesi palomuuriohjelmiston päällä aina. Älä lähde kotoa palomuuri pois päältä. Jos sinun tarvitsee säätää palomuuria tapahtumassa, pyydä apua toisilta osallistujilta tai järjestäjiltä. Mitään takuuta tai vastuuta avustamisesta ei anneta eikä oteta.</p>
 </div>
 
-<div class="paattyminen">
+<div id="paattyminen" class="tabcontent">
     <h2>Tapahtuman päättyminen</h2>
     <p>Tavaroiden poisvienti on yleensä paljon helpompaa ja nopeampaa, kuin kasaaminen. Tavaroita voi viedä ulos pääovesta tai Anni Swaninkadun pikkuovesta sunnuntaina. Konepaikan on oltava tyhjä sunnuntaina klo 12.00.</p>
     <ul>
@@ -86,18 +101,19 @@
         <li>Mene kotiin</li>
     </ul>
 </div>
+
+
+<div id="yleista" class="tabcontent">
+    <h1 style="text-align: center; color: white; font-family: mokotoFont; margin: bottom 20px;">Säännöt ja ohjeet</h1>
+        <p>Jokaisella on erilaiset tarpeet, mutta ohessa on peruslista tapahtumassa yöpyvien tarvitsemista asioista. </p>
+        <p> Osallistumalla hyväksyt tapahtuman säännöt ja sitoudut noudattamaan niitä.</p>
+        <p> Sääntöjen rikkominen voi johtaa tapahtumapaikalta poistamiseen.</p>
+        <p> Säännöt on tehty, jotta kaikkien viikonloppu olisi mukavampi, joten noudata sääntöjä.</p>
+        <p> Muista, että kaikki Suomen lait, kuten tekijänoikeuslait, pätevät tapahtumassa.</p>
+        <p> Käytä tervettä järkeäsi ja seuraa alla olevia sääntöjä.</p> 
 </div>
 
-
-<div class="kappale2">
-    <h1 style="text-align: center; color: white; font-family: mokotoFont; margin: bottom 20px;">Säännöt</h1>
-    <p> Osallistumalla hyväksyt tapahtuman säännöt ja sitoudut noudattamaan niitä.</p>
-    <p> Sääntöjen rikkominen voi johtaa tapahtumapaikalta poistamiseen.</p>
-    <p> Säännöt on tehty, jotta kaikkien viikonloppu olisi mukavampi, joten noudata sääntöjä.</p>
-    <p> Muista, että kaikki Suomen lait, kuten tekijänoikeuslait, pätevät tapahtumassa.</p>
-    <p> Käytä tervettä järkeäsi ja seuraa alla olevia sääntöjä.</p>
-
-    <div class="ktavarat">
+<div id="ktavarat" class="tabcontent">
     <h2>Kielletyt tavarat</h2>
     <ul>
         <li>Minkäänlaiset aseet ja teräaseet - kuten puukot, Leathermanit tai muut monitoimityökalut, joiden osana on veitsi (nämä luokitellaan teräaseiksi)</li>
@@ -110,29 +126,29 @@
     </ul>
 </div>
 
-<div class="paihteet">
+<div id="paihteet" class="tabcontent">
     <h2>Päihteet ja huumausaineet</h2>
     <p>Tapahtuma on täysin päihteetön. Päihteitä (alkoholi yms.) tai huumausaineita ei saa tuoda tapahtumapaikalle. Tapahtumaan ei pääse sisään päihtyneenä. Tupakointi koulussa ja koulun alueella on kielletty.</p>
 </div>
 
-<div class="tekijanoikeudet">
+<div id="tekijanoikeudet" class="tabcontent">
     <h2>Tekijänoikeudet</h2>
     <p>Tekijänoikeuksilla suojattujen ohjelmistojen kopiointi on laitonta Suomessa. Laittomien ohjelmistojen myynti tai piraatti FTP-palvelimien ylläpito johtaa välittömästi poistamiseen tapahtumasta. Törkeimmissä tapauksissa hoidamme tapaukset viranomaisten tietoon.</p>
 </div>
 
-<div class="musiikki">
+<div id="musiikki" class="tabcontent">
     <h2>Musiikin äänenvoimakkuus</h2>
     <p>Hyvin tehokkaat äänentoistolaitteet ovat kiellettyjä. Pidetään äänen taso järkevänä.</p>
     <p>Jos kuitenkin terrorisoit laitteistollasi naapuristoasi, turvahenkilökunta voi käskeä sinua hiljentämään laitteitasi tai äärimmäisessä tapauksessa poistaa sinut tapahtumapaikalta.</p>
     <p>Toivomme, että käytätte tervettä järkeä. Sallitun ja kielletyn laitteiston rajan pitäisi olla kaikille melko selvä. Kerromme sinulle kuitenkin, jos väärinkäsityksiä on päässyt käymään.</p>
 </div>
 
-<div class="vauriot">
+<div id="vauriot" class="tabcontent">
     <h2>Tapahtumapaikan vauriot</h2>
     <p>Kaikki tapahtumapaikkaa vaurioittavat henkilöt ovat korvausvelvollisia vahingoistaan.</p>
 </div>
 
-<div class="lahiverkko">
+<div id="lahiverkko" class="tabcontent">
     <h2>Lähiverkon säännöt</h2>
     <p>Tapahtumassa EI SAA:</p>
     <ul>
@@ -143,12 +159,14 @@
     </ul>
 </div>
 
-<div class="pgrafia">
+<div id="pgrafia" class="tabcontent">
     <h2>Pornografinen tai väkivaltainen materiaali</h2>
     <p>Tapahtumassa on kiellettyä katsoa julkisesti pornografista tai erittäin väkivaltaista aineistoa videoina tai kuvina. Eli suomeksi: aikuisviihde ja väkivalta jätetään pois kokonaan. Kyseistä materiaalia julkisesti näyttävä henkilö voidaan poistaa tapahtumasta ilman varoitusta! Oman koneen monitori näkyy myös muille, eli tapahtumassa se on julkista.</p>
 </div>
 
-</div>
+<script>
+    document.getElementById("default").click();
+</script>
 
 </body>
 </html>
