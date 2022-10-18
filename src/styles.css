@@ -56,10 +56,10 @@ li {
 /* Tabin tyyli */
 .tab {
   float: left;
-  border: 1px solid #ccc;
   background-color: #06085c;
+  background: rgba(20, 5, 83, 0.5);
   width: 30%;
-  height: 300px;
+  height: 100%;
 }
 
 /* Tabin napit/buttonit */
