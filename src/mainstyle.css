@@ -43,7 +43,7 @@ h2 {
   color: white;
   font-size: 3vw;
   cursor: pointer;
-  padding: 4vw;
+  padding: 1vw;
   position: relative;
   border-radius: 50px;
   font-family: mokotoFont;
@@ -126,6 +126,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 200px;
+padding-top: 5px;
 }
 
 .img2 {position: relative;
@@ -159,5 +160,12 @@ width: 100px;
       border-radius: 50px;
       font-family: mokotoFont;
     }
+
+    .img1 {height: 40px;
+    width: 120px;
+  padding-top: 10px}
+
+    .img2 {height: 50px;
+    width: 50px;}
   
   }
