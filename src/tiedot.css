@@ -1,6 +1,5 @@
 .lomake {
     color: white;
-    font-size: 1vw;
     font-family: mokotoFont;
     padding: 10px;
     line-height: 2;
@@ -14,9 +13,9 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-    width: 5vw;
+    margin-top: 20px;
+    padding: 10px 20px;
     text-align: center;
-    font-size: 1vw;
 }
 
 input[type="radio"] {
