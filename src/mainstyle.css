@@ -144,28 +144,33 @@ width: 100px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center}
+    text-align: center;
+  }
 
-    .mobiili {
-      display: block;
-      width: 100%;
-      border: none;
-      background-color: blue;
-      color: white;
-      font-size: 3vw;
-      cursor: pointer;
-      padding: 4vw;
-      margin-bottom: 10px;
-      position: relative;
-      border-radius: 50px;
-      font-family: mokotoFont;
+  .mobiili {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 4vw;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 50px;
+    font-family: mokotoFont;
     }
 
-    .img1 {height: 40px;
+  .img1 {
+    height: 40px;
     width: 120px;
-  padding-top: 10px}
+    padding-top: 10px;
+    }
 
-    .img2 {height: 50px;
-    width: 50px;}
+  .img2 {
+    height: 50px;
+    width: 50px;
+    }
   
-  }
+}
