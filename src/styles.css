@@ -99,14 +99,15 @@ li {
   padding: 0px 12px;
   width: 70%;
   border-left: none;
-  height: 300px;
+  
 }
 
 .alalogo {
-  position: absolute;
+  position: relative;
   text-align: center;
   width: 100%;
   bottom: 0;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 700px) 
@@ -161,7 +162,6 @@ li {
       padding: 0px;
       width: 70%;
       border-left: none;
-      height: 300px;
       margin-left: 2%;
     }
 }
